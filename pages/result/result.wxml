@@ -1,0 +1,17 @@
+<!--pages/result/result.wxml-->
+
+<view class='continer'>
+  <view class='h1'>{{textData.name}}</view>
+  <view class='h3'>{{textData.time}}</view>
+
+  <block wx:for="{{textData.content}}" wx:key="{{inex}}">
+    <view class='h2'>{{item.title}}</view>
+    <block wx:for="{{item.qa}}" wx:key="{{inex}}">
+      <view class='quest'>
+        <view class='title'>{{item.question}}</view>
+        <view class='cont'>{{item.answer}}</view>
+      </view>
+    </block>
+  </block>
+
+</view>

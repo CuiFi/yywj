@@ -1,0 +1,2261 @@
+<view class='ask_title'>易阳国际别墅装饰客户设计需求问卷</view>
+<view class='border_b'>
+  <text>感谢您抽空参与本次调查，请留下您的宝贵意见和建议，以鞭策易阳装饰工作！</text>
+  <text>我们将用心聆听您的声音，不断优化产品，为您提供更好的服务，感谢您的支持！</text>
+</view>
+
+<view class='container'>
+  <form bindsubmit="formSubmit">
+    <view class='left_text'>Q1:您的姓名:
+      <text style='color:red'>*</text>
+    </view>
+    <view class='input_parent'>
+      <input class='input_text' type='text' name="q1"></input>
+    </view>
+
+    <view class='left_text'>Q2:楼盘名称:</view>
+    <view class='input_parent'>
+      <input class='input_text' type='text' name="q2"></input>
+    </view>
+
+    <view class='left_text'>Q3:户型:</view>
+    <view class='input_parent'>
+      <input class='input_text' type='text' name="q3"></input>
+    </view>
+
+    <view class='left_text'>Q4:面积:</view>
+    <view class='input_parent'>
+      <input class='input_text' type='text' name="q4"></input>
+    </view>
+
+    <view class='left_text'>Q5:房子使用倾向?</view>
+    <view class='border_view'>
+      <radio-group class="radio-group" name="q5" bindchange="radioChange5">
+        <label class="radio">
+          <radio value="第一居所" />第一居所
+        </label>
+        <label class="radio">
+          <radio value="第二居所" />第二居所
+        </label>
+        <label class="radio">
+          <radio value="出租" />出租
+        </label>
+        <label class="radio">
+          <radio value="养老" />养老
+        </label>
+        <label class="radio">
+          <radio value="会所" />会所
+        </label>
+        <label class="radio">
+          <radio value="投资" />投资
+        </label>
+        <label style='border-bottom:0' class="radio">
+          <radio value="{{q5Data}}" />其他
+          <input hidden="{{q5if ? !true : !false}}" style='text-indent:5px' class='input_text' type='text' value='{{q5value}}' bindinput="bindKeyInput5"></input>
+        </label>
+      </radio-group>
+    </view>
+
+    <view class='left_text'>Q6:常住家庭成员:</view>
+    <view class='input_parent'>
+      <input class='input_text' type='text' name="q6"></input>
+    </view>
+
+    <view class='left_text'>Q7:特别关照人群?</view>
+    <view class='border_view'>
+      <radio-group class="radio-group" name="q7">
+        <label class="radio">
+          <radio value="老人" />老人
+        </label>
+        <label class="radio">
+          <radio value="小孩" />小孩
+        </label>
+        <label class="radio">
+          <radio value="残障人士" />残障人士
+        </label>
+        <label class="radio">
+          <radio value="少数民族" />少数民族
+        </label>
+      </radio-group>
+    </view>
+
+    <view class='left_text'>Q8:了解公司的途径?
+      <text style='color:red'>*</text>
+    </view>
+    <view class='border_view'>
+      <radio-group class="radio-group" name="q8">
+        <label class="radio">
+          <radio value="网络、微信群" />网络、微信群
+        </label>
+        <label class="radio">
+          <radio value="媒体广告" />媒体广告
+        </label>
+        <label class="radio">
+          <radio value="电话业务" />电话业务
+        </label>
+        <label class="radio">
+          <radio value="朋友介绍" />朋友介绍
+        </label>
+      </radio-group>
+    </view>
+
+    <view class='left_text_title'>一、整体需求</view>
+
+    <view class='left_text'>Q1:喜欢的风格?
+      <text style='color:blue'>[可多选]</text>
+    </view>
+    <view class='border_view'>
+      <checkbox-group class="radio-group" name="q1_1" bindchange="checkboxChange1_1">
+        <label class="radio">
+          <checkbox value="现代简约" />现代简约
+        </label>
+        <label class="radio">
+          <checkbox value="欧式" />欧式
+        </label>
+        <label class="radio">
+          <checkbox value="美式" />美式
+        </label>
+        <label class="radio">
+          <checkbox value="中式" />中式
+        </label>
+        <label class="radio">
+          <checkbox value="日式" />日式
+        </label>
+        <label class="radio">
+          <checkbox value="新古典" />新古典
+        </label>
+        <label class="radio">
+          <checkbox value="东南亚" />东南亚
+        </label>
+        <label class="radio">
+          <checkbox value="地中海" />地中海
+        </label>
+        <label style='border-bottom:0' class="radio">
+          <checkbox value="{{q1_1Data}}" />其他
+        </label>
+        <input hidden="{{q1_1if ? !true : !false}}" class='input_text input_another' type='text' value='{{q1_1value}}' bindinput="bindKeyInput1_1"></input>
+      </checkbox-group>
+    </view>
+
+    <view class='left_text'>Q2:您是否有宗教信仰?</view>
+    <view class='border_view'>
+      <radio-group class="radio-group" name="q1_2">
+        <label class="radio">
+          <radio value="佛教" />佛教
+        </label>
+        <label class="radio">
+          <radio value="基督教" />基督教
+        </label>
+        <label class="radio">
+          <radio value="伊斯兰教" />伊斯兰教
+        </label>
+        <label class="radio">
+          <radio value="道教" />道教
+        </label>
+        <label style='border-bottom:0' class="radio">
+          <radio value="没有" />没有
+        </label>
+      </radio-group>
+    </view>
+
+    <view class='left_text'>Q3:空间数量?</view>
+    <view class='border_view'>
+      <radio-group class="radio-group" name="q1_3">
+        <label class="radio">
+          <radio value="增加" />增加
+        </label>
+        <label class="radio">
+          <radio value="交换" />交换
+        </label>
+        <label class="radio">
+          <radio value="减少" />减少
+        </label>
+        <label style='border-bottom:0' class="radio">
+          <radio value="不变" />不变
+        </label>
+      </radio-group>
+    </view>
+
+    <view class='left_text'>Q4:设计,装修中禁忌与忌讳哪些?请填写:</view>
+    <view class='input_parent'>
+      <input class='input_text' type='text' name="q1_4"></input>
+    </view>
+
+    <view class='left_text'>Q5:谁参与装修意见最多?请填写:</view>
+    <view class='input_parent'>
+      <input class='input_text' type='text' name="q1_5"></input>
+    </view>
+
+    <view class='left_text'>Q6:喜欢的颜色?请填写:</view>
+    <view class='input_parent'>
+      <input class='input_text' type='text' name="q1_6"></input>
+    </view>
+
+    <view class='left_text'>Q7:不喜欢的颜色?请填写:</view>
+    <view class='input_parent'>
+      <input class='input_text' type='text' name="q1_7"></input>
+    </view>
+
+    <view class='left_text'>Q8:是否刷重颜色墙漆?</view>
+    <view class='border_view'>
+      <radio-group class="radio-group" name="q1_8">
+        <label class="radio">
+          <radio value="是" />是
+        </label>
+        <label style='border-bottom:0' class="radio">
+          <radio value="否" />否
+        </label>
+      </radio-group>
+    </view>
+
+    <view class='left_text'>Q9:是否更换暖气/地暖?</view>
+    <view class='border_view'>
+      <radio-group class="radio-group" name="q1_9">
+        <label class="radio">
+          <radio value="是" />是
+        </label>
+        <label style='border-bottom:0' class="radio">
+          <radio value="否" />否
+        </label>
+      </radio-group>
+    </view>
+
+    <view class='left_text'>Q10:是否需要换楼梯?</view>
+    <view class='border_view'>
+      <radio-group class="radio-group" name="q1_10">
+        <label class="radio">
+          <radio value="是" />是
+        </label>
+        <label style='border-bottom:0' class="radio">
+          <radio value="否" />否
+        </label>
+      </radio-group>
+    </view>
+
+    <view class='left_text'>Q11:是否需要固定电话?</view>
+    <view class='border_view'>
+      <radio-group class="radio-group" name="q1_11">
+        <label class="radio">
+          <radio value="是" />是
+        </label>
+        <label style='border-bottom:0' class="radio">
+          <radio value="否" />否
+        </label>
+      </radio-group>
+    </view>
+
+    <view class='left_text'>Q12:是否需要智能化家居?</view>
+    <view class='border_view'>
+      <radio-group class="radio-group" name="q1_12">
+        <label class="radio">
+          <radio value="是" />是
+        </label>
+        <label style='border-bottom:0' class="radio">
+          <radio value="否" />否
+        </label>
+      </radio-group>
+    </view>
+
+    <view class='left_text'>Q13:是否需要音响?</view>
+    <view class='border_view'>
+      <radio-group class="radio-group" name="q1_13">
+        <label class="radio">
+          <radio value="是" />是
+        </label>
+        <label style='border-bottom:0' class="radio">
+          <radio value="否" />否
+        </label>
+      </radio-group>
+    </view>
+
+    <view class='left_text'>Q14:是否需要投影仪?</view>
+    <view class='border_view'>
+      <radio-group class="radio-group" name="q1_14">
+        <label class="radio">
+          <radio value="是" />是
+        </label>
+        <label style='border-bottom:0' class="radio">
+          <radio value="否" />否
+        </label>
+      </radio-group>
+    </view>
+
+    <view class='left_text'>Q15:是否需要新风系统?</view>
+    <view class='border_view'>
+      <radio-group class="radio-group" name="q1_15">
+        <label class="radio">
+          <radio value="是" />是
+        </label>
+        <label style='border-bottom:0' class="radio">
+          <radio value="否" />否
+        </label>
+      </radio-group>
+    </view>
+
+    <view class='left_text'>Q16:是否需要加双控开关?</view>
+    <view class='border_view'>
+      <radio-group class="radio-group" name="q1_16">
+        <label class="radio">
+          <radio value="是" />是
+        </label>
+        <label style='border-bottom:0' class="radio">
+          <radio value="否" />否
+        </label>
+      </radio-group>
+    </view>
+
+    <view class='left_text'>Q17:空调的类型?</view>
+    <view class='border_view'>
+      <radio-group class="radio-group" name="q1_17">
+        <label class="radio">
+          <radio value="壁挂式" />壁挂式
+        </label>
+        <label class="radio">
+          <radio value="立式" />立式
+        </label>
+        <label style='border-bottom:0' class="radio">
+          <radio value="中央空调" />中央空调
+        </label>
+      </radio-group>
+    </view>
+
+    <view class='left_text'>Q18:电视的安装方式?</view>
+    <view class='border_view'>
+      <radio-group class="radio-group" name="q1_18">
+        <label class="radio">
+          <radio value="挂式" />挂式
+        </label>
+        <label style='border-bottom:0' class="radio">
+          <radio value="座式" />座式
+        </label>
+      </radio-group>
+    </view>
+
+    <view class='left_text'>Q19:地板的类型?</view>
+    <view class='border_view'>
+      <radio-group class="radio-group" name="q1_19">
+        <label class="radio">
+          <radio value="强化复合" />强化复合
+        </label>
+        <label class="radio">
+          <radio value="实木复合" />实木复合
+        </label>
+        <label class="radio">
+          <radio value="实木" />实木
+        </label>
+        <label class="radio">
+          <radio value="竹木" />竹木
+        </label>
+        <label style='border-bottom:0' class="radio">
+          <radio value="软木" />软木
+        </label>
+      </radio-group>
+    </view>
+
+    <view class='left_text'>Q20:飘窗台面材料?</view>
+    <view class='border_view'>
+      <radio-group class="radio-group" name="q1_20">
+        <label class="radio">
+          <radio value="石材" />石材
+        </label>
+        <label class="radio">
+          <radio value="板材" />板材
+        </label>
+        <label class="radio">
+          <radio value="地板" />地板
+        </label>
+        <label style='border-bottom:0' class="radio">
+          <radio value="其他" />其他
+        </label>
+      </radio-group>
+    </view>
+
+    <view class='left_text'>Q21:窗帘的类型?</view>
+    <view class='border_view'>
+      <radio-group class="radio-group" name="q1_21">
+        <label class="radio">
+          <radio value="轨道式" />轨道式
+        </label>
+        <label class="radio">
+          <radio value="窗帘杆式" />窗帘杆式
+        </label>
+        <label class="radio">
+          <radio value="百叶" />百叶
+        </label>
+        <label style='border-bottom:0' class="radio">
+          <radio value="电动窗帘" />电动窗帘
+        </label>
+      </radio-group>
+    </view>
+
+    <view class='left_text'>Q22:是否包窗套和垭口?</view>
+    <view class='border_view'>
+      <radio-group class="radio-group" name="q1_22">
+        <label class="radio">
+          <radio value="是" />是
+        </label>
+        <label style='border-bottom:0' class="radio">
+          <radio value="否" />否
+        </label>
+      </radio-group>
+    </view>
+
+    <view class='left_text'>Q23:需要哪些造型?
+      <text style='color:blue'>[多选题]</text>
+    </view>
+    <view class='border_view'>
+      <checkbox-group class="radio-group" name="q1_23">
+        <label class="radio">
+          <checkbox value="墙面造型" />墙面造型
+        </label>
+        <label class="radio">
+          <checkbox value="顶面造型" />顶面造型
+        </label>
+        <label class="radio">
+          <checkbox value="地面造型" />地面造型
+        </label>
+        <label class="radio">
+          <checkbox value="玄关" />玄关
+        </label>
+        <label class="radio">
+          <checkbox value="现场木作" />现场木作
+        </label>
+        <label style='border-bottom:0' class="radio">
+          <checkbox value="其他" />其他
+        </label>
+      </checkbox-group>
+    </view>
+
+    <view class='left_text'>Q24:是否养宠物?</view>
+    <view class='border_view'>
+      <radio-group class="radio-group" name="q1_24">
+        <label class="radio">
+          <radio value="是" />是
+        </label>
+        <label style='border-bottom:0' class="radio">
+          <radio value="否" />否
+        </label>
+      </radio-group>
+    </view>
+
+    <view class='left_text'>Q25:需不需要结构改造或加建?</view>
+    <view class='border_view'>
+      <radio-group class="radio-group" name="q1_25">
+        <label class="radio">
+          <radio value="需要" />需要
+        </label>
+        <label style='border-bottom:0' class="radio">
+          <radio value="不需要" />不需要
+        </label>
+      </radio-group>
+    </view>
+
+    <view class='left_text'>Q26:是否有风水设计需求?</view>
+    <view class='border_view'>
+      <radio-group class="radio-group" name="q1_26">
+        <label class="radio">
+          <radio value="有" />有
+        </label>
+        <label style='border-bottom:0' class="radio">
+          <radio value="没有" />没有
+        </label>
+      </radio-group>
+    </view>
+
+    <view class='left_text'>Q27:您需要几个停车位?</view>
+    <view class='border_view'>
+      <radio-group class="radio-group" name="q1_27">
+        <label class="radio">
+          <radio value="1个" />1个
+        </label>
+        <label class="radio">
+          <radio value="2个" />2个
+        </label>
+        <label class="radio">
+          <radio value="3个" />3个
+        </label>
+        <label class="radio">
+          <radio value="4个" />4个
+        </label>
+        <label style='border-bottom:0' class="radio">
+          <radio value="更多" />更多
+        </label>
+      </radio-group>
+    </view>
+
+    <view class='left_text_title'>二、会客及交流空间</view>
+
+    <view class='left_text'>Q1:平时有什么样的会客需求?
+      <text style='color:blue'>[多选题]</text>
+    </view>
+    <view class='border_view'>
+      <checkbox-group class="radio-group" name="q2_1">
+        <label class="radio">
+          <checkbox value="家庭聚会" />家庭聚会
+        </label>
+        <label class="radio">
+          <checkbox value="偶尔的工作接待" />偶尔的工作接待
+        </label>
+        <label class="radio">
+          <checkbox value="朋友聚会" />朋友聚会
+        </label>
+        <label class="radio">
+          <checkbox value="商务接待" />商务接待
+        </label>
+        <label style='border-bottom:0' class="radio">
+          <checkbox value="其他" />其他
+        </label>
+      </checkbox-group>
+    </view>
+
+    <view class='left_text'>Q2:您及家人平时在此空间的主要活动?
+      <text style='color:blue'>[多选题]</text>
+    </view>
+    <view class='border_view'>
+      <checkbox-group class="radio-group" name="q2_2">
+        <label class="radio">
+          <checkbox value="看电视" />看电视
+        </label>
+        <label class="radio">
+          <checkbox value="听音乐" />听音乐
+        </label>
+        <label class="radio">
+          <checkbox value="聊天" />聊天
+        </label>
+        <label class="radio">
+          <checkbox value="读书" />读书
+        </label>
+        <label style='border-bottom:0' class="radio">
+          <checkbox value="上网" />上网
+        </label>
+      </checkbox-group>
+    </view>
+
+    <view class='left_text'>Q3:需要有储书和阅读空间吗?</view>
+    <view class='border_view'>
+      <radio-group class="radio-group" name="q2_3">
+        <label class="radio">
+          <radio value="需要" />需要
+        </label>
+        <label style='border-bottom:0' class="radio">
+          <radio value="不需要" />不需要
+        </label>
+      </radio-group>
+    </view>
+
+    <view class='left_text'>Q4:会放置钢琴或其他乐器吗?</view>
+    <view class='border_view'>
+      <radio-group class="radio-group" name="q2_4">
+        <label class="radio">
+          <radio value="有" />有
+        </label>
+        <label style='border-bottom:0' class="radio">
+          <radio value="暂时没有" />暂时没有
+        </label>
+      </radio-group>
+    </view>
+
+    <view class='left_text'>Q5:会展示艺术品或收藏品吗?</view>
+    <view class='border_view'>
+      <radio-group class="radio-group" name="q2_5">
+        <label class="radio">
+          <radio value="有" />有
+        </label>
+        <label style='border-bottom:0' class="radio">
+          <radio value="没有" />没有
+        </label>
+      </radio-group>
+    </view>
+
+    <view class='left_text'>Q6:需要放专业的喝茶工具吗?</view>
+    <view class='border_view'>
+      <radio-group class="radio-group" name="q2_6">
+        <label class="radio">
+          <radio value="需要" />需要
+        </label>
+        <label style='border-bottom:0' class="radio">
+          <radio value="不需要" />不需要
+        </label>
+      </radio-group>
+    </view>
+
+    <view class='left_text'>Q7:是否需要儿童游戏区</view>
+    <view class='border_view'>
+      <radio-group class="radio-group" name="q2_7">
+        <label class="radio">
+          <radio value="需要" />需要
+        </label>
+        <label style='border-bottom:0' class="radio">
+          <radio value="不需要" />不需要
+        </label>
+      </radio-group>
+    </view>
+
+    <view class='left_text'>Q8:对此空间有无其他特殊功能需求?请填写:</view>
+    <view class='input_parent'>
+      <input class='input_text' type='text' name="q2_8"></input>
+    </view>
+
+    <view class='left_text_title'>三、餐厅空间</view>
+
+
+    <view class='left_text'>Q1:平时聚餐多吗?人数多少?请填写:</view>
+    <view class='input_parent'>
+      <input class='input_text' type='text' name="q3_1"></input>
+    </view>
+
+    <view class='left_text'>Q2:喜欢用什么形式的餐桌?</view>
+    <view class='border_view'>
+      <radio-group class="radio-group" name="q3_2">
+        <label class="radio">
+          <radio value="圆桌" />圆桌
+        </label>
+        <label class="radio">
+          <radio value="方桌" />方桌
+        </label>
+        <label style='border-bottom:0' class="radio">
+          <radio value="多功能餐桌" />多功能餐桌
+        </label>
+      </radio-group>
+    </view>
+
+    <view class='left_text'>Q3:是否有在餐厅看电视的习惯?</view>
+    <view class='border_view'>
+      <radio-group class="radio-group" name="q3_3">
+        <label class="radio">
+          <radio value="是" />是
+        </label>
+        <label style='border-bottom:0' class="radio">
+          <radio value="否" />否
+        </label>
+      </radio-group>
+    </view>
+
+    <view class='left_text'>Q4:对此空间有什么特殊的储物要求?请大概描述:</view>
+    <view class='input_parent'>
+      <input class='input_text' type='text' name="q3_4"></input>
+    </view>
+
+    <view class='left_text'>Q5:是否有旧家具用在新房中?</view>
+    <view class='border_view'>
+      <radio-group class="radio-group" name="q3_5">
+        <label class="radio">
+          <radio value="有" />有
+        </label>
+        <label style='border-bottom:0' class="radio">
+          <radio value="没有" />没有
+        </label>
+      </radio-group>
+    </view>
+
+    <view class='left_text_title'>四、厨房空间</view>
+
+    <view class='left_text'>Q1:厨房同时会有几个人一起操作烹饪?</view>
+    <view class='border_view'>
+      <radio-group class="radio-group" name="q4_1">
+        <label class="radio">
+          <radio value="1人" />1人
+        </label>
+        <label class="radio">
+          <radio value="2人" />2人
+        </label>
+        <label style='border-bottom:0' class="radio">
+          <radio value="3人" />3人
+        </label>
+      </radio-group>
+    </view>
+
+    <view class='left_text'>Q2:厨房是少有烹饪还是经常烹调美食大餐?</view>
+    <view class='border_view'>
+      <radio-group class="radio-group" name="q4_2">
+        <label class="radio">
+          <radio value="少有" />少有
+        </label>
+        <label style='border-bottom:0' class="radio">
+          <radio value="经常" />经常
+        </label>
+      </radio-group>
+    </view>
+
+    <view class='left_text'>Q3:对厨房电器的需求有哪些?
+      <text style='color:blue'>[多选题]</text>
+    </view>
+    <view class='border_view'>
+      <checkbox-group class="radio-group" name="q4_3">
+        <label class="radio">
+          <checkbox value="烤箱" />烤箱
+        </label>
+        <label class="radio">
+          <checkbox value="蒸锅" />蒸锅
+        </label>
+        <label class="radio">
+          <checkbox value="微波炉" />微波炉
+        </label>
+        <label class="radio">
+          <checkbox value="消毒柜" />消毒柜
+        </label>
+        <label class="radio">
+          <checkbox value="洗碗机" />洗碗机
+        </label>
+        <label class="radio">
+          <checkbox value="净水机" />净水机
+        </label>
+        <label class="radio">
+          <checkbox value="厨宝" />厨宝
+        </label>
+        <label class="radio">
+          <checkbox value="咖啡机" />咖啡机
+        </label>
+        <label class="radio">
+          <checkbox value="垃圾处理机" />垃圾处理机
+        </label>
+        <label class="radio">
+          <checkbox value="净水直饮机" />净水直饮机
+        </label>
+        <label style='border-bottom:0' class="radio">
+          <checkbox value="其他" />其他
+        </label>
+      </checkbox-group>
+    </view>
+
+    <view class='left_text'>Q4:灶具的类型?</view>
+    <view class='border_view'>
+      <radio-group class="radio-group" name="q4_4">
+        <label class="radio">
+          <radio value="燃气" />燃气
+        </label>
+        <label class="radio">
+          <radio value="电式" />电式
+        </label>
+        <label style='border-bottom:0' class="radio">
+          <radio value="集成灶" />集成灶
+        </label>
+      </radio-group>
+    </view>
+
+    <view class='left_text'>Q5:洗脸盆的类型?</view>
+    <view class='border_view'>
+      <radio-group class="radio-group" name="q4_5">
+        <label class="radio">
+          <radio value="单盆" />单盆
+        </label>
+        <label style='border-bottom:0' class="radio">
+          <radio value="双盆" />双盆
+        </label>
+      </radio-group>
+    </view>
+
+    <view class='left_text'>Q6:冰箱的类型?</view>
+    <view class='border_view'>
+      <radio-group class="radio-group" name="q4_6">
+        <label class="radio">
+          <radio value="单开门" />单开门
+        </label>
+        <label style='border-bottom:0' class="radio">
+          <radio value="双开门" />双开门
+        </label>
+      </radio-group>
+    </view>
+
+    <view class='left_text'>Q7:对厨房物品的储存有何特殊需求?请填写:</view>
+    <view class='input_parent'>
+      <input class='input_text' type='text' name="q4_7"></input>
+    </view>
+
+    <view class='left_text'>Q8:对厨房空间其他的功能需求?请填写:</view>
+    <view class='input_parent'>
+      <input class='input_text' type='text' name="q4_8"></input>
+    </view>
+
+    <view class='left_text'>Q9:厨房吊顶类型?</view>
+    <view class='border_view'>
+      <radio-group class="radio-group" name="q4_9">
+        <label class="radio">
+          <radio value="成品" />成品
+        </label>
+        <label style='border-bottom:0' class="radio">
+          <radio value="防水/火石膏板吊顶" />防水/火石膏板吊顶
+        </label>
+      </radio-group>
+    </view>
+
+    <view class='left_text'>Q10:厨房瓷砖规格?</view>
+    <view class='border_view'>
+      <radio-group class="radio-group" name="q4_10">
+        <label class="radio">
+          <radio value="墙砖规格" />墙砖规格
+        </label>
+        <label style='border-bottom:0' class="radio">
+          <radio value="地砖规格" />地砖规格
+        </label>
+      </radio-group>
+    </view>
+
+    <view class='left_text'>Q11:是否需要薄贴?</view>
+    <view class='border_view'>
+      <radio-group class="radio-group" name="q4_11">
+        <label class="radio">
+          <radio value="是" />是
+        </label>
+        <label style='border-bottom:0' class="radio">
+          <radio value="否" />否
+        </label>
+      </radio-group>
+    </view>
+
+    <view class='left_text'>Q12:是否需要美缝剂?</view>
+    <view class='border_view'>
+      <radio-group class="radio-group" name="q4_12">
+        <label class="radio">
+          <radio value="是" />是
+        </label>
+        <label style='border-bottom:0' class="radio">
+          <radio value="否" />否
+        </label>
+      </radio-group>
+    </view>
+
+    <view class='left_text'>Q13:是否需要在厨房放置洗衣机?</view>
+    <view class='border_view'>
+      <radio-group class="radio-group" name="q4_13">
+        <label class="radio">
+          <radio value="是" />是
+        </label>
+        <label style='border-bottom:0' class="radio">
+          <radio value="否" />否
+        </label>
+      </radio-group>
+    </view>
+
+    <view class='left_text'>Q14:厨房是否有燃气热水器?</view>
+    <view class='border_view'>
+      <radio-group class="radio-group" name="q4_14">
+        <label class="radio">
+          <radio value="是" />是
+        </label>
+        <label style='border-bottom:0' class="radio">
+          <radio value="否" />否
+        </label>
+      </radio-group>
+    </view>
+
+    <view class='left_text_title'>五、卧室空间</view>
+
+    <view class='left_text'>Q1:对各卧室空间所需的床尺寸有无特殊要求?</view>
+    <view class='border_view'>
+      <radio-group class="radio-group" name="q5_1">
+        <label class="radio">
+          <radio value="有" />有
+        </label>
+        <label style='border-bottom:0' class="radio">
+          <radio value="无" />无
+        </label>
+      </radio-group>
+    </view>
+
+    <view class='left_text'>Q2:对各卧室床垫材质及软硬度有无特殊要求?</view>
+    <view class='border_view'>
+      <radio-group class="radio-group" name="q5_2">
+        <label class="radio">
+          <radio value="有" />有
+        </label>
+        <label style='border-bottom:0' class="radio">
+          <radio value="无" />无
+        </label>
+      </radio-group>
+    </view>
+
+    <view class='left_text'>Q3:是否有在床上阅读的习惯?</view>
+    <view class='border_view'>
+      <radio-group class="radio-group" name="q5_3">
+        <label class="radio">
+          <radio value="是" />是
+        </label>
+        <label style='border-bottom:0' class="radio">
+          <radio value="否" />否
+        </label>
+      </radio-group>
+    </view>
+
+    <view class='left_text'>Q4:是否需要设置一个有座位的区域?</view>
+    <view class='border_view'>
+      <radio-group class="radio-group" name="q5_4">
+        <label class="radio">
+          <radio value="需要" />需要
+        </label>
+        <label style='border-bottom:0' class="radio">
+          <radio value="不需要" />不需要
+        </label>
+      </radio-group>
+    </view>
+
+    <view class='left_text'>Q5:是否需要预留学习的空间?</view>
+    <view class='border_view'>
+      <radio-group class="radio-group" name="q5_5">
+        <label class="radio">
+          <radio value="需要" />需要
+        </label>
+        <label style='border-bottom:0' class="radio">
+          <radio value="不需要" />不需要
+        </label>
+      </radio-group>
+    </view>
+
+    <view class='left_text'>Q6:是否需要梳妆台?</view>
+    <view class='border_view'>
+      <radio-group class="radio-group" name="q5_6">
+        <label class="radio">
+          <radio value="需要" />需要
+        </label>
+        <label style='border-bottom:0' class="radio">
+          <radio value="不需要" />不需要
+        </label>
+      </radio-group>
+    </view>
+
+    <view class='left_text'>Q7:对衣帽间或衣物储存有无特殊要求?请填写:</view>
+    <view class='input_parent'>
+      <input class='input_text' type='text' name="q5_7"></input>
+    </view>
+
+    <view class='left_text'>Q8:对卧室灯光有无特殊需求或禁忌?请填写:</view>
+    <view class='input_parent'>
+      <input class='input_text' type='text' name="q5_8"></input>
+    </view>
+
+    <view class='left_text'>Q9:是否有其他的功能需求?请填写:</view>
+    <view class='input_parent'>
+      <input class='input_text' type='text' name="q5_9"></input>
+    </view>
+
+    <view class='left_text_title'>六、学习空间:</view>
+
+    <view class='left_text'>Q1:主要功能使用倾向?
+      <text style='color:blue'>[多选题]</text>
+    </view>
+    <view class='border_view'>
+      <checkbox-group class="radio-group" name="q6_1">
+        <label class="radio">
+          <checkbox value="阅读" />阅读
+        </label>
+        <label class="radio">
+          <checkbox value="书写" />书写
+        </label>
+        <label class="radio">
+          <checkbox value="上网" />上网
+        </label>
+        <label class="radio">
+          <checkbox value="会客" />会客
+        </label>
+        <label class="radio">
+          <checkbox value="品茶" />品茶
+        </label>
+        <label class="radio">
+          <checkbox value="办公学习" />办公学习
+        </label>
+        <label style='border-bottom:0' class="radio">
+          <checkbox value="其他" />其他
+        </label>
+      </checkbox-group>
+    </view>
+
+    <view class='left_text'>Q2:您家学习空间会有几个人同时使用?</view>
+    <view class='border_view'>
+      <radio-group class="radio-group" name="q6_2">
+        <label class="radio">
+          <radio value="1人" />1人
+        </label>
+        <label class="radio">
+          <radio value="2人" />2人
+        </label>
+        <label class="radio">
+          <radio value="3人" />3人
+        </label>
+        <label style='border-bottom:0' class="radio">
+          <radio value="更多" />更多
+        </label>
+      </radio-group>
+    </view>
+
+    <view class='left_text'>Q3:学习空间需要摆放哪类物品，有无特殊尺寸要求？</view>
+    <view class='border_view'>
+      <radio-group class="radio-group" name="q6_3">
+        <label class="radio">
+          <radio value="书" />书
+        </label>
+        <label class="radio">
+          <radio value="碟片" />碟片
+        </label>
+        <label class="radio">
+          <radio value="工艺品" />工艺品
+        </label>
+        <label style='border-bottom:0' class="radio">
+          <radio value="其他" />其他
+        </label>
+      </radio-group>
+    </view>
+
+    <view class='left_text'>Q4:需要配置的电器设备?
+      <text style='color:blue'>[多选题]</text>
+    </view>
+    <view class='border_view'>
+      <checkbox-group class="radio-group" name="q6_4">
+        <label class="radio">
+          <checkbox value="台式电脑" />台式电脑
+        </label>
+        <label class="radio">
+          <checkbox value="打印机" />打印机
+        </label>
+        <label class="radio">
+          <checkbox value="传真机" />传真机
+        </label>
+        <label class="radio">
+          <checkbox value="笔记本电脑" />笔记本电脑
+        </label>
+        <label class="radio">
+          <checkbox value="电话" />电话
+        </label>
+        <label style='border-bottom:0' class="radio">
+          <checkbox value="其他" />其他
+        </label>
+      </checkbox-group>
+    </view>
+
+    <view class='left_text'>Q5:是否有经常吸烟的习惯?</view>
+    <view class='border_view'>
+      <radio-group class="radio-group" name="q6_5">
+        <label class="radio">
+          <radio value="有" />有
+        </label>
+        <label style='border-bottom:0' class="radio">
+          <radio value="没有" />没有
+        </label>
+      </radio-group>
+    </view>
+
+    <view class='left_text'>Q6:是否需要远程视频或电话会议?请填写:</view>
+    <view class='input_parent'>
+      <input class='input_text' type='text' name="q6_6"></input>
+    </view>
+
+    <view class='left_text'>Q7:对此空间其他的功能需求?请填写:</view>
+    <view class='input_parent'>
+      <input class='input_text' type='text' name="q6_7"></input>
+    </view>
+
+    <view class='left_text_title'>七、卫浴空间</view>
+
+    <view class='left_text'>Q1:浴房的类型?
+      <text style='color:blue'>[多选题]</text>
+    </view>
+    <view class='border_view'>
+      <checkbox-group class="radio-group" name="q7_1">
+        <label class="radio">
+          <checkbox value="一字型" />一字型
+        </label>
+        <label class="radio">
+          <checkbox value="圆形或钻石型" />圆形或钻石型
+        </label>
+        <label class="radio">
+          <checkbox value="L型" />L型
+        </label>
+        <label class="radio">
+          <checkbox value="挡水条" />挡水条
+        </label>
+        <label style='border-bottom:0' class="radio">
+          <checkbox value="不需要" />不需要
+        </label>
+      </checkbox-group>
+    </view>
+
+    <view class='left_text'>Q2:浴缸安装方式?</view>
+    <view class='border_view'>
+      <radio-group class="radio-group" name="q7_2">
+        <label class="radio">
+          <radio value="嵌入式" />嵌入式
+        </label>
+        <label class="radio">
+          <radio value="独立式" />独立式
+        </label>
+        <label class="radio">
+          <radio value="裙边式" />裙边式
+        </label>
+        <label style='border-bottom:0' class="radio">
+          <radio value="不需要" />不需要
+        </label>
+      </radio-group>
+    </view>
+
+    <view class='left_text'>Q3:洗手盆的类型?</view>
+    <view class='border_view'>
+      <radio-group class="radio-group" name="q7_3">
+        <label class="radio">
+          <radio value="台上盆" />台上盆
+        </label>
+        <label class="radio">
+          <radio value="台下盆" />台下盆
+        </label>
+        <label class="radio">
+          <radio value="挂墙式" />挂墙式
+        </label>
+        <label style='border-bottom:0' class="radio">
+          <radio value="柱盆" />柱盆
+        </label>
+      </radio-group>
+    </view>
+
+    <view class='left_text'>Q4:花洒的类型?</view>
+    <view class='border_view'>
+      <radio-group class="radio-group" name="q7_4">
+        <label class="radio">
+          <radio value="手持式" />手持式
+        </label>
+        <label class="radio">
+          <radio value="拉杆" />拉杆
+        </label>
+        <label style='border-bottom:0' class="radio">
+          <radio value="头顶式" />头顶式
+        </label>
+      </radio-group>
+    </view>
+
+    <view class='left_text'>Q5:座便器的类型?</view>
+    <view class='border_view'>
+      <radio-group class="radio-group" name="q7_5">
+        <label class="radio">
+          <radio value="普通" />普通
+        </label>
+        <label class="radio">
+          <radio value="智能式" />智能式
+        </label>
+        <label class="radio">
+          <radio value="侧排式" />侧排式
+        </label>
+        <label class="radio">
+          <radio value="蹲便器" />蹲便器
+        </label>
+        <label style='border-bottom:0' class="radio">
+          <radio value="后排式" />后排式
+        </label>
+      </radio-group>
+    </view>
+
+    <view class='left_text'>Q6:热水器的类型?</view>
+    <view class='border_view'>
+      <radio-group class="radio-group" name="q7_6">
+        <label class="radio">
+          <radio value="电式" />电式
+        </label>
+        <label class="radio">
+          <radio value="燃气" />燃气
+        </label>
+        <label class="radio">
+          <radio value="太阳能" />太阳能
+        </label>
+        <label class="radio">
+          <radio value="壁挂炉" />壁挂炉
+        </label>
+        <label style='border-bottom:0' class="radio">
+          <radio value="即热型" />即热型
+        </label>
+      </radio-group>
+    </view>
+
+    <view class='left_text'>Q7:是否需要浴霸/凉霸?</view>
+    <view class='border_view'>
+      <radio-group class="radio-group" name="q7_7">
+        <label class="radio">
+          <radio value="是" />是
+        </label>
+        <label style='border-bottom:0' class="radio">
+          <radio value="否" />否
+        </label>
+      </radio-group>
+    </view>
+
+    <view class='left_text'>Q8:是否有在卫生间梳妆的习惯?</view>
+    <view class='border_view'>
+      <radio-group class="radio-group" name="q7_8">
+        <label class="radio">
+          <radio value="是" />是
+        </label>
+        <label style='border-bottom:0' class="radio">
+          <radio value="否" />否
+        </label>
+      </radio-group>
+    </view>
+
+    <view class='left_text'>Q9:是否考虑留镜前灯?</view>
+    <view class='border_view'>
+      <radio-group class="radio-group" name="q7_9">
+        <label class="radio">
+          <radio value="是" />是
+        </label>
+        <label style='border-bottom:0' class="radio">
+          <radio value="否" />否
+        </label>
+      </radio-group>
+    </view>
+
+    <view class='left_text'>Q10:卫浴空间是否有其他需求?</view>
+    <view class='border_view'>
+      <radio-group class="radio-group" name="q7_10">
+        <label class="radio">
+          <radio value="干蒸房" />干蒸房
+        </label>
+        <label class="radio">
+          <radio value="湿蒸房" />湿蒸房
+        </label>
+        <label class="radio">
+          <radio value="按摩室" />按摩室
+        </label>
+        <label style='border-bottom:0' class="radio">
+          <radio value="无" />无
+        </label>
+      </radio-group>
+    </view>
+
+    <view class='left_text'>Q11:卫生间吊顶类型?</view>
+    <view class='border_view'>
+      <radio-group class="radio-group" name="q7_11">
+        <label class="radio">
+          <radio value="成品" />成品
+        </label>
+        <label style='border-bottom:0' class="radio">
+          <radio value="防水/火石膏板吊顶" />防水/火石膏板吊顶
+        </label>
+      </radio-group>
+    </view>
+
+    <view class='left_text'>Q12:卫生间瓷砖规格?</view>
+    <view class='border_view'>
+      <radio-group class="radio-group" name="q7_12">
+        <label class="radio">
+          <radio value="墙砖规格" />墙砖规格
+        </label>
+        <label class="radio">
+          <radio value="地砖规格" />地砖规格
+        </label>
+        <label style='border-bottom:0' class="radio">
+          <radio value="是否需要薄贴" />是否需要薄贴
+        </label>
+      </radio-group>
+    </view>
+
+    <view class='left_text'>Q13:是否需要美缝剂?</view>
+    <view class='border_view'>
+      <radio-group class="radio-group" name="q7_13">
+        <label class="radio">
+          <radio value="是" />是
+        </label>
+        <label style='border-bottom:0' class="radio">
+          <radio value="否" />否
+        </label>
+      </radio-group>
+    </view>
+
+    <view class='left_text'>Q14:下水管道隔音处理?</view>
+    <view class='border_view'>
+      <radio-group class="radio-group" name="q7_14">
+        <label class="radio">
+          <radio value="是" />是
+        </label>
+        <label style='border-bottom:0' class="radio">
+          <radio value="否" />否
+        </label>
+      </radio-group>
+    </view>
+
+    <view class='left_text'>Q15:是否需要下水移位?</view>
+    <view class='border_view'>
+      <radio-group class="radio-group" name="q7_15">
+        <label class="radio">
+          <radio value="是" />是
+        </label>
+        <label style='border-bottom:0' class="radio">
+          <radio value="否" />否
+        </label>
+      </radio-group>
+    </view>
+
+    <view class='left_text'>Q16:是否需要在卫生间放置洗衣机?</view>
+    <view class='border_view'>
+      <radio-group class="radio-group" name="q7_16">
+        <label class="radio">
+          <radio value="是" />是
+        </label>
+        <label style='border-bottom:0' class="radio">
+          <radio value="否" />否
+        </label>
+      </radio-group>
+    </view>
+
+    <view class='left_text_title'>八、清洁空间</view>
+
+    <view class='left_text'>Q1:家庭清洁系统有哪些需求?
+      <text style='color:blue'>[多选题]</text>
+    </view>
+    <view class='border_view'>
+      <checkbox-group class="radio-group" name="q8_1">
+        <label class="radio">
+          <checkbox value="中央吸尘" />中央吸尘
+        </label>
+        <label class="radio">
+          <checkbox value="厨房垃圾处理器" />厨房垃圾处理器
+        </label>
+        <label class="radio">
+          <checkbox value="泳池/汤池清洁与除味装置" />泳池/汤池清洁与除味装置
+        </label>
+        <label class="radio">
+          <checkbox value="便携式吸尘器" />便携式吸尘器
+        </label>
+        <label class="radio">
+          <checkbox value="拖把" />拖把
+        </label>
+        <label class="radio">
+          <checkbox value="扫把" />扫把
+        </label>
+        <label style='border-bottom:0' class="radio">
+          <checkbox value="其他" />其他
+        </label>
+      </checkbox-group>
+    </view>
+
+    <view class='left_text'>Q2:洗衣机的类型?</view>
+    <view class='border_view'>
+      <radio-group class="radio-group" name="q8_2">
+        <label class="radio">
+          <radio value="波轮式" />波轮式
+        </label>
+        <label class="radio">
+          <radio value="滚筒式" />滚筒式
+        </label>
+        <label style='border-bottom:0' class="radio">
+          <radio value="其他" />其他
+        </label>
+      </radio-group>
+    </view>
+
+    <view class='left_text'>Q3:准备配置几台洗衣机?</view>
+    <view class='border_view'>
+      <radio-group class="radio-group" name="q8_3">
+        <label class="radio">
+          <radio value="1台" />1台
+        </label>
+        <label style='border-bottom:0' class="radio">
+          <radio value="2台以上" />2台以上
+        </label>
+      </radio-group>
+    </view>
+
+    <view class='left_text'>Q4:衣服是晾干还是烘干?</view>
+    <view class='border_view'>
+      <radio-group class="radio-group" name="q8_4">
+        <label class="radio">
+          <radio value="晾干" />晾干
+        </label>
+        <label style='border-bottom:0' class="radio">
+          <radio value="烘干" />烘干
+        </label>
+      </radio-group>
+    </view>
+
+    <view class='left_text'>Q5:烫衣物的习惯与工具?请填写:</view>
+    <view class='input_parent'>
+      <input class='input_text' type='text' name="q8_5"></input>
+    </view>
+
+    <view class='left_text'>Q6:对清洁用品的储存有什么要求?请填写:</view>
+    <view class='input_parent'>
+      <input class='input_text' type='text' name="q8_6"></input>
+    </view>
+
+    <view class='left_text_title'>九、储存空间</view>
+
+    <view class='left_text'>Q1:有多少衬衣,针织衫等衣物?请填写:</view>
+    <view class='input_parent'>
+      <input class='input_text' type='text' name="q9_1"></input>
+    </view>
+
+    <view class='left_text'>Q2:有多少双鞋子?请填写:</view>
+    <view class='input_parent'>
+      <input class='input_text' type='text' name="q9_2"></input>
+    </view>
+
+    <view class='left_text'>Q3:有多少箱子,是否有特殊的尺寸?请填写:</view>
+    <view class='input_parent'>
+      <input class='input_text' type='text' name="q9_3"></input>
+    </view>
+
+    <view class='left_text'>Q4:是否有密室或保险柜的需求及尺寸要求?请填写:</view>
+    <view class='input_parent'>
+      <input class='input_text' type='text' name="q9_4"></input>
+    </view>
+
+    <view class='left_text'>Q5:是否有节日装饰品需要单独存贮?请填写:</view>
+    <view class='input_parent'>
+      <input class='input_text' type='text' name="q9_5"></input>
+    </view>
+
+    <view class='left_text'>Q6:是否有以下爱好?
+      <text style='color:blue'>[多选题]</text>
+    </view>
+    <view class='border_view'>
+      <checkbox-group class="radio-group" name="q9_6">
+        <label class="radio">
+          <checkbox value="登山" />登山
+        </label>
+        <label class="radio">
+          <checkbox value="滑雪" />滑雪
+        </label>
+        <label class="radio">
+          <checkbox value="房车露营" />房车露营
+        </label>
+        <label class="radio">
+          <checkbox value="户外自行车运动" />户外自行车运动
+        </label>
+        <label class="radio">
+          <checkbox value="户外烧烤" />户外烧烤
+        </label>
+        <label style='border-bottom:0' class="radio">
+          <checkbox value="自驾游" />自驾游
+        </label>
+      </checkbox-group>
+    </view>
+
+    <view class='left_text'>Q7:是否需要配置下列功能空间?
+      <text style='color:blue'>[多选题]</text>
+    </view>
+    <view class='border_view'>
+      <checkbox-group class="radio-group" name="q9_7">
+        <label class="radio">
+          <checkbox value="酒窖" />酒窖
+        </label>
+        <label class="radio">
+          <checkbox value="茶仓" />茶仓
+        </label>
+        <label class="radio">
+          <checkbox value="密室" />密室
+        </label>
+        <label class="radio">
+          <checkbox value="冷库" />冷库
+        </label>
+        <label style='border-bottom:0' class="radio">
+          <checkbox value="艺术品收藏室" />艺术品收藏室
+        </label>
+      </checkbox-group>
+    </view>
+
+    <view class='left_text_title'>十、娱乐空间</view>
+
+    <view class='left_text'>Q1:对家庭娱乐系统的需求有哪些?
+      <text style='color:blue'>[多选题]</text>
+    </view>
+    <view class='border_view'>
+      <checkbox-group class="radio-group" name="q10_1">
+        <label class="radio">
+          <checkbox value="影音" />影音
+        </label>
+        <label class="radio">
+          <checkbox value="背景音乐" />背景音乐
+        </label>
+        <label class="radio">
+          <checkbox value="游戏室" />游戏室
+        </label>
+        <label style='border-bottom:0' class="radio">
+          <checkbox value="其他" />其他
+        </label>
+      </checkbox-group>
+    </view>
+
+    <view class='left_text'>Q2:有哪些必须要的娱乐设备?请填写:</view>
+    <view class='input_parent'>
+      <input class='input_text' type='text' name="q10_2"></input>
+    </view>
+
+    <view class='left_text'>Q3:需要SPA空间吗?</view>
+    <view class='border_view'>
+      <radio-group class="radio-group" name="q10_3">
+        <label class="radio">
+          <radio value="需要" />需要
+        </label>
+        <label style='border-bottom:0' class="radio">
+          <radio value="不需要" />不需要
+        </label>
+      </radio-group>
+    </view>
+
+    <view class='left_text'>Q4:需要什么功能水吧以及相关的存储需求?请填写:</view>
+    <view class='input_parent'>
+      <input class='input_text' type='text' name="q10_4"></input>
+    </view>
+
+    <view class='left_text_title'>十一、运动空间</view>
+
+    <view class='left_text'>Q1:您平日喜好何种体育项目?请填写:</view>
+    <view class='input_parent'>
+      <input class='input_text' type='text' name="q11_1"></input>
+    </view>
+
+    <view class='left_text'>Q2:您家对运动系统的需求有哪些?
+      <text style='color:blue'>[多选题]</text>
+    </view>
+    <view class='border_view'>
+      <checkbox-group class="radio-group" name="q11_2">
+        <label class="radio">
+          <checkbox value="健生房" />健身房
+        </label>
+        <label class="radio">
+          <checkbox value="瑜伽室" />瑜伽室
+        </label>
+        <label class="radio">
+          <checkbox value="台球" />台球
+        </label>
+        <label class="radio">
+          <checkbox value="乒乓球" />乒乓球
+        </label>
+        <label class="radio">
+          <checkbox value="室内高尔夫球" />室内高尔夫球
+        </label>
+        <label class="radio">
+          <checkbox value="泳池" />泳池
+        </label>
+        <label class="radio">
+          <checkbox value="舞蹈室" />舞蹈室
+        </label>
+        <label style='border-bottom:0' class="radio">
+          <checkbox value="其他" />其他
+        </label>
+      </checkbox-group>
+    </view>
+
+    <view class='left_text'>Q3:您将匹配哪些运动器械?请填写:</view>
+    <view class='input_parent'>
+      <input class='input_text' type='text' name="q11_3"></input>
+    </view>
+
+    <view class='left_text_title'>十二、精神人文空间</view>
+
+    <view class='left_text'>Q1:是否需要以下特殊的精神颐养空间?
+      <text style='color:blue'>[多选题]</text>
+    </view>
+    <view class='border_view'>
+      <checkbox-group class="radio-group" name="q12_1">
+        <label class="radio">
+          <checkbox value="佛堂" />佛堂
+        </label>
+        <label class="radio">
+          <checkbox value="想室" />想室
+        </label>
+        <label class="radio">
+          <checkbox value="禅房" />禅房
+        </label>
+        <label class="radio">
+          <checkbox value="茶室" />茶室
+        </label>
+        <label class="radio">
+          <checkbox value="琴房" />琴房
+        </label>
+        <label class="radio">
+          <checkbox value="画室" />画室
+        </label>
+        <label class="radio">
+          <checkbox value="艺术品收藏室" />艺术品收藏室
+        </label>
+        <label style='border-bottom:0' class="radio">
+          <checkbox value="无" />无
+        </label>
+      </checkbox-group>
+    </view>
+
+    <view class='left_text'>Q2:还有何特殊要求?请填写:</view>
+    <view class='input_parent'>
+      <input class='input_text' type='text' name="q12_2"></input>
+    </view>
+
+    <view class='left_text_title'>十三、园林设计需求</view>
+
+    <view class='left_text'>Q1:园林风格倾向?</view>
+    <view class='border_view'>
+      <radio-group class="radio-group" name="q13_1">
+        <label class="radio">
+          <radio value="是" />是
+        </label>
+        <label style='border-bottom:0' class="radio">
+          <radio value="否" />否
+        </label>
+      </radio-group>
+    </view>
+
+    <view class='left_text'>Q2:是否需要水系?</view>
+    <view class='border_view'>
+      <radio-group class="radio-group" name="q13_2">
+        <label class="radio">
+          <radio value="是" />是
+        </label>
+        <label style='border-bottom:0' class="radio">
+          <radio value="否" />否
+        </label>
+      </radio-group>
+    </view>
+
+    <view class='left_text'>Q3:还有何特殊要求?请填写:</view>
+    <view class='input_parent'>
+      <input class='input_text' type='text' name="q13_3"></input>
+    </view>
+
+    <view class='left_text_title'>十四、其他功能空间</view>
+
+    <view class='left_text'>Q1:是否需要安全屋?</view>
+    <view class='border_view'>
+      <radio-group class="radio-group" name="q14_1">
+        <label class="radio">
+          <radio value="需要" />需要
+        </label>
+        <label style='border-bottom:0' class="radio">
+          <radio value="不需要" />不需要
+        </label>
+      </radio-group>
+    </view>
+
+    <view class='left_text'>Q2:是否有宠物且需要宠物房?</view>
+    <view class='border_view'>
+      <radio-group class="radio-group" name="q14_2">
+        <label class="radio">
+          <radio value="需要" />需要
+        </label>
+        <label style='border-bottom:0' class="radio">
+          <radio value="不需要" />不需要
+        </label>
+      </radio-group>
+    </view>
+
+    <view class='left_text'>Q3:是否还有我们未考虑到的其他空间需求?请填写:</view>
+    <view class='input_parent'>
+      <input class='input_text' type='text' name="q14_3"></input>
+    </view>
+
+    <view class='left_text_title'>十五、舒适性系统设备需求</view>
+
+    <view class='left_text'>Q1:希望匹配以下哪些系统设备?
+      <text style='color:blue'>[多选题]</text>
+    </view>
+    <view class='border_view'>
+      <checkbox-group class="radio-group" name="q15_1">
+        <label class="radio">
+          <checkbox value="空调系统" />空调系统
+        </label>
+        <label class="radio">
+          <checkbox value="地暖系统" />地暖系统
+        </label>
+        <label class="radio">
+          <checkbox value="新风系统" />新风系统
+        </label>
+        <label class="radio">
+          <checkbox value="除湿系统" />除湿系统
+        </label>
+        <label class="radio">
+          <checkbox value="净化系统" />净化系统
+        </label>
+        <label class="radio">
+          <checkbox value="背景音乐系统" />背景音乐系统
+        </label>
+        <label class="radio">
+          <checkbox value="智能控制系统" />智能控制系统
+        </label>
+        <label class="radio">
+          <checkbox value="安防系统" />安防系统
+        </label>
+        <label class="radio">
+          <checkbox value="手机信号放大系统" />手机信号放大系统
+        </label>
+        <label class="radio">
+          <checkbox value="wifi无死角覆盖系统" />wifi无死角覆盖系统
+        </label>
+        <label class="radio">
+          <checkbox value="太阳能系统" />太阳能系统
+        </label>
+        <label style='border-bottom:0' class="radio">
+          <checkbox value="水处理系统" />水处理系统
+        </label>
+      </checkbox-group>
+    </view>
+
+    <view class='left_text'>Q2:水处理系统需求?</view>
+    <view class='border_view'>
+      <radio-group class="radio-group" name="q15_2">
+        <label class="radio">
+          <radio value="纯水" />纯水
+        </label>
+        <label class="radio">
+          <radio value="净水" />净水
+        </label>
+        <label style='border-bottom:0' class="radio">
+          <radio value="软化水" />软化水
+        </label>
+      </radio-group>
+    </view>
+
+    <view class='left_text'>Q3:生活热水是否需要即开即热功能?</view>
+    <view class='border_view'>
+      <radio-group class="radio-group" name="q15_3">
+        <label class="radio">
+          <radio value="需要" />需要
+        </label>
+        <label style='border-bottom:0' class="radio">
+          <radio value="不需要" />不需要
+        </label>
+      </radio-group>
+    </view>
+
+    <view class='left_text_title'>十六、娱乐设计需求</view>
+
+    <view class='left_text'>Q1:是否需要娱乐区?</view>
+    <view class='border_view'>
+      <radio-group class="radio-group" name="q16_1">
+        <label class="radio">
+          <radio value="需要" />需要
+        </label>
+        <label style='border-bottom:0' class="radio">
+          <radio value="不需要" />不需要
+        </label>
+      </radio-group>
+    </view>
+
+    <view class='left_text'>Q2:是否需要休闲区?</view>
+    <view class='border_view'>
+      <radio-group class="radio-group" name="q16_2">
+        <label class="radio">
+          <radio value="需要" />需要
+        </label>
+        <label style='border-bottom:0' class="radio">
+          <radio value="不需要" />不需要
+        </label>
+      </radio-group>
+    </view>
+
+    <view class='left_text'>Q3:是否需要烧烤区?</view>
+    <view class='border_view'>
+      <radio-group class="radio-group" name="q16_3">
+        <label class="radio">
+          <radio value="需要" />需要
+        </label>
+        <label style='border-bottom:0' class="radio">
+          <radio value="不需要" />不需要
+        </label>
+      </radio-group>
+    </view>
+
+    <view class='left_text'>Q4:是否需要菜地?</view>
+    <view class='border_view'>
+      <radio-group class="radio-group" name="q16_4">
+        <label class="radio">
+          <radio value="需要" />需要
+        </label>
+        <label style='border-bottom:0' class="radio">
+          <radio value="不需要" />不需要
+        </label>
+      </radio-group>
+    </view>
+
+    <view class='left_text'>Q5:对于花草的养殖有无特殊需求?请填写:</view>
+    <view class='input_parent'>
+      <input class='input_text' type='text' name="q16_5"></input>
+    </view>
+
+    <view class='left_text'>Q6:对植物有无特殊喜好?请填写:</view>
+    <view class='input_parent'>
+      <input class='input_text' type='text' name="q16_6"></input>
+    </view>
+
+    <view class='left_text_title'>十七、外观设计需求</view>
+
+    <view class='left_text'>Q1:是否更换窗户?</view>
+    <view class='border_view'>
+      <radio-group class="radio-group" name="q17_1">
+        <label class="radio">
+          <radio value="是" />是
+        </label>
+        <label style='border-bottom:0' class="radio">
+          <radio value="否" />否
+        </label>
+      </radio-group>
+    </view>
+
+    <view class='left_text'>Q2:是否更换防盗门?</view>
+    <view class='border_view'>
+      <radio-group class="radio-group" name="q17_2">
+        <label class="radio">
+          <radio value="是" />是
+        </label>
+        <label style='border-bottom:0' class="radio">
+          <radio value="否" />否
+        </label>
+      </radio-group>
+    </view>
+
+    <view class='left_text'>Q3:是否有电梯?</view>
+    <view class='border_view'>
+      <radio-group class="radio-group" name="q17_3">
+        <label class="radio">
+          <radio value="是" />是
+        </label>
+        <label style='border-bottom:0' class="radio">
+          <radio value="否" />否
+        </label>
+      </radio-group>
+    </view>
+
+    <view class='left_text'>Q4:小区是否有指定垃圾清运地点?</view>
+    <view class='border_view'>
+      <radio-group class="radio-group" name="q17_4">
+        <label class="radio">
+          <radio value="是" />是
+        </label>
+        <label class="radio">
+          <radio value="否" />否
+        </label>
+        <label style='border-bottom:0' class="radio">
+          <radio value="不清楚" />不清楚
+        </label>
+      </radio-group>
+    </view>
+
+    <view class='left_text_title'>十八、预算及材料设计需求</view>
+
+    <view class='left_text'>Q1:购买主材的预算?</view>
+    <view class='border_view'>
+      <radio-group class="radio-group" name="q18_1">
+        <label class="radio">
+          <radio value="5万以内" />5万以内
+        </label>
+        <label class="radio">
+          <radio value="5万--10万" />5万--10万
+        </label>
+        <label class="radio">
+          <radio value="10万--30万" />10万--30万
+        </label>
+        <label style='border-bottom:0' class="radio">
+          <radio value="30万以上" />30万以上
+        </label>
+      </radio-group>
+    </view>
+
+    <view class='left_text'>Q2:主材已购买哪些?
+      <text style='color:blue'>[多选题]</text>
+    </view>
+    <view class='border_view'>
+      <checkbox-group class="radio-group" name="q18_2">
+        <label class="radio">
+          <checkbox value="瓷砖" />瓷砖
+        </label>
+        <label class="radio">
+          <checkbox value="地板" />地板
+        </label>
+        <label class="radio">
+          <checkbox value="木门" />木门
+        </label>
+        <label class="radio">
+          <checkbox value="洁具" />洁具
+        </label>
+        <label class="radio">
+          <checkbox value="橱柜" />橱柜
+        </label>
+        <label class="radio">
+          <checkbox value="吊顶" />吊顶
+        </label>
+        <label class="radio">
+          <checkbox value="开关" />开关
+        </label>
+        <label class="radio">
+          <checkbox value="楼梯" />楼梯
+        </label>
+        <label class="radio">
+          <checkbox value="衣柜" />衣柜
+        </label>
+        <label class="radio">
+          <checkbox value="净水" />净水
+        </label>
+        <label class="radio">
+          <checkbox value="暖气" />暖气
+        </label>
+        <label class="radio">
+          <checkbox value="石材" />石材
+        </label>
+        <label class="radio">
+          <checkbox value="空调" />空调
+        </label>
+        <label class="radio">
+          <checkbox value="门窗" />门窗
+        </label>
+        <label class="radio">
+          <checkbox value="电器" />电器
+        </label>
+        <label style='border-bottom:0' class="radio">
+          <checkbox value="五金" />五金
+        </label>
+      </checkbox-group>
+    </view>
+
+    <view class='left_text'>Q3:配饰已购买哪些?
+      <text style='color:blue'>[多选题]</text>
+    </view>
+    <view style='margin-bottom:50px' class='border_view'>
+      <checkbox-group class="radio-group" name="q18_3">
+        <label class="radio">
+          <checkbox value="家具" />家具
+        </label>
+        <label class="radio">
+          <checkbox value="窗帘" />窗帘
+        </label>
+        <label class="radio">
+          <checkbox value="灯具" />灯具
+        </label>
+        <label class="radio">
+          <checkbox value="壁纸" />壁纸
+        </label>
+        <label class="radio">
+          <checkbox value="绿植" />绿植
+        </label>
+        <label class="radio">
+          <checkbox value="饰品" />饰品
+        </label>
+        <label style='border-bottom:0' class="radio">
+          <checkbox value="家具布艺" />家具布艺
+        </label>
+      </checkbox-group>
+    </view>
+
+    <view class='left_text_title'>十九、家庭成员的年龄及星座情况</view>
+
+    <view class='left_text'>Q1:男女主人年龄区间?</view>
+    <view class='border_view'>
+      <radio-group class="radio-group" name="q19_1">
+        <label class="radio">
+          <radio value="0岁≤区间≤3岁" />0岁≤区间≤3岁
+        </label>
+        <label class="radio">
+          <radio value="3岁<区间≤5岁" />3岁{{"<"}}区间≤5岁
+        </label>
+        <label class="radio">
+          <radio value="5岁<区间≤10岁" />5岁{{"<"}}区间≤10岁
+        </label>
+        <label style='border-bottom:0' class="radio">
+          <radio value="10岁<区间≤15岁" />10岁{{"<"}}区间≤15岁
+        </label>
+      </radio-group>
+    </view>
+
+    <view class='left_text'>Q2:孩子数量</view>
+    <view style='margin-bottom:0;font-size:32rpx;' class='input_parent'>
+      男孩: <input class='inline_input' type='text' name="q19_2_1"></input>个
+    </view>
+    <view style='font-size:32rpx;' class='input_parent'>
+      女孩: <input class='inline_input' type='text' name="q19_2_2"></input>个
+    </view>
+
+    <view class='left_text'>Q3:孩子年龄区间?</view>
+    <view class='border_view'>
+      <radio-group class="radio-group" name="q19_3">
+        <label class="radio">
+          <radio value="0岁≤区间≤3岁" />0岁≤区间≤3岁
+        </label>
+        <label class="radio">
+          <radio value="3岁<区间≤5岁" />3岁{{"<"}}区间≤5岁
+        </label>
+        <label class="radio">
+          <radio value="5岁<区间≤10岁" />5岁{{"<"}}区间≤10岁
+        </label>
+        <label style='border-bottom:0' class="radio">
+          <radio value="10岁<区间≤15岁" />10岁{{"<"}}区间≤15岁
+        </label>
+      </radio-group>
+    </view>
+
+    <view class='left_text'>Q4:老人长辈几位?</view>
+    <view class='border_view'>
+      <radio-group class="radio-group" name="q19_4">
+        <label class="radio">
+          <radio value="1位" />1位
+        </label>
+        <label class="radio">
+          <radio value="2位" />2位
+        </label>
+        <label class="radio">
+          <radio value="3位" />3位
+        </label>
+        <label style='border-bottom:0' class="radio">
+          <radio value="4位" />4位
+        </label>
+      </radio-group>
+    </view>
+
+    <view class='left_text'>Q5:老人年纪?</view>
+    <view class='border_view'>
+      <radio-group class="radio-group" name="q19_5">
+        <label class="radio">
+          <radio value="50岁≤区间60岁" />50岁≤区间60岁
+        </label>
+        <label class="radio">
+          <radio value="60岁<区间≤70岁" />60岁{{"<"}}区间≤70岁
+        </label>
+        <label class="radio">
+          <radio value="70岁<区间≤80岁" />70岁{{"<"}}区间≤80岁
+        </label>
+        <label class="radio">
+          <radio value="80岁<区间≤90岁" />80岁{{"<"}}区间≤90岁
+        </label>
+        <label class="radio">
+          <radio value="90岁<区间≤100岁" />90岁{{"<"}}区间≤100岁
+        </label>
+        <label style='border-bottom:0' class="radio">
+          <radio value=">100岁" />10岁{{">"}}100岁
+        </label>
+      </radio-group>
+    </view>
+
+    <view class='left_text'>Q6:男主人的星座?</view>
+    <view class='border_view'>
+      <radio-group class="radio-group" name="q19_6">
+        <label class="radio">
+          <radio value="白羊座" />白羊座
+        </label>
+        <label class="radio">
+          <radio value="金牛座" />金牛座
+        </label>
+        <label class="radio">
+          <radio value="双子座" />双子座
+        </label>
+        <label class="radio">
+          <radio value="巨蟹座" />巨蟹座
+        </label>
+        <label class="radio">
+          <radio value="狮子座" />狮子座
+        </label>
+        <label class="radio">
+          <radio value="处女座" />处女座
+        </label>
+        <label class="radio">
+          <radio value="天秤座" />天秤座
+        </label>
+        <label class="radio">
+          <radio value="天蝎座" />天蝎座
+        </label>
+        <label class="radio">
+          <radio value="射手座" />射手座
+        </label>
+        <label class="radio">
+          <radio value="摩羯座" />摩羯座
+        </label>
+        <label class="radio">
+          <radio value="水瓶座" />水瓶座
+        </label>
+        <label style='border-bottom:0' class="radio">
+          <radio value="双鱼座" />双鱼座
+        </label>
+      </radio-group>
+    </view>
+
+    <view class='left_text'>Q7:女主人的星座?</view>
+    <view class='border_view'>
+      <radio-group class="radio-group" name="q19_7">
+        <label class="radio">
+          <radio value="白羊座" />白羊座
+        </label>
+        <label class="radio">
+          <radio value="金牛座" />金牛座
+        </label>
+        <label class="radio">
+          <radio value="双子座" />双子座
+        </label>
+        <label class="radio">
+          <radio value="巨蟹座" />巨蟹座
+        </label>
+        <label class="radio">
+          <radio value="狮子座" />狮子座
+        </label>
+        <label class="radio">
+          <radio value="处女座" />处女座
+        </label>
+        <label class="radio">
+          <radio value="天秤座" />天秤座
+        </label>
+        <label class="radio">
+          <radio value="天蝎座" />天蝎座
+        </label>
+        <label class="radio">
+          <radio value="射手座" />射手座
+        </label>
+        <label class="radio">
+          <radio value="摩羯座" />摩羯座
+        </label>
+        <label class="radio">
+          <radio value="水瓶座" />水瓶座
+        </label>
+        <label style='border-bottom:0' class="radio">
+          <radio value="双鱼座" />双鱼座
+        </label>
+      </radio-group>
+    </view>
+
+    <view class='left_text'>Q8:老人的星座?</view>
+    <view class='border_view'>
+      <radio-group class="radio-group" name="q19_8">
+        <label class="radio">
+          <radio value="白羊座" />白羊座
+        </label>
+        <label class="radio">
+          <radio value="金牛座" />金牛座
+        </label>
+        <label class="radio">
+          <radio value="双子座" />双子座
+        </label>
+        <label class="radio">
+          <radio value="巨蟹座" />巨蟹座
+        </label>
+        <label class="radio">
+          <radio value="狮子座" />狮子座
+        </label>
+        <label class="radio">
+          <radio value="处女座" />处女座
+        </label>
+        <label class="radio">
+          <radio value="天秤座" />天秤座
+        </label>
+        <label class="radio">
+          <radio value="天蝎座" />天蝎座
+        </label>
+        <label class="radio">
+          <radio value="射手座" />射手座
+        </label>
+        <label class="radio">
+          <radio value="摩羯座" />摩羯座
+        </label>
+        <label class="radio">
+          <radio value="水瓶座" />水瓶座
+        </label>
+        <label style='border-bottom:0' class="radio">
+          <radio value="双鱼座" />双鱼座
+        </label>
+      </radio-group>
+    </view>
+
+    <view class='left_text'>Q9:孩子的星座?</view>
+    <view class='border_view'>
+      <radio-group class="radio-group" name="q19_9">
+        <label class="radio">
+          <radio value="白羊座" />白羊座
+        </label>
+        <label class="radio">
+          <radio value="金牛座" />金牛座
+        </label>
+        <label class="radio">
+          <radio value="双子座" />双子座
+        </label>
+        <label class="radio">
+          <radio value="巨蟹座" />巨蟹座
+        </label>
+        <label class="radio">
+          <radio value="狮子座" />狮子座
+        </label>
+        <label class="radio">
+          <radio value="处女座" />处女座
+        </label>
+        <label class="radio">
+          <radio value="天秤座" />天秤座
+        </label>
+        <label class="radio">
+          <radio value="天蝎座" />天蝎座
+        </label>
+        <label class="radio">
+          <radio value="射手座" />射手座
+        </label>
+        <label class="radio">
+          <radio value="摩羯座" />摩羯座
+        </label>
+        <label class="radio">
+          <radio value="水瓶座" />水瓶座
+        </label>
+        <label style='border-bottom:0' class="radio">
+          <radio value="双鱼座" />双鱼座
+        </label>
+      </radio-group>
+    </view>
+    
+    <view class='left_text_title'>二十、家人期望的空间氛围</view>
+    <view class='left_text'>Q1:家人对家居产品材质的喜好?</view>
+    <view style='margin-bottom:0' class='input_parent inline_picker'>
+      <label>女主人:</label>
+      <picker name="q20_1_1" bindchange="bindPickerChange1_1" value="{{cznamenv}}" range="{{array20_1}}">
+          <view class="picker">
+            {{cznamenv}}
+          </view>
+      </picker>
+    </view>
+    <view style='margin-bottom:0' class='input_parent inline_picker'>
+      <label>男主人:</label>
+      <picker name="q20_1_2" bindchange="bindPickerChange1_2" value="{{cznamenan}}" range="{{array20_1}}">
+          <view class="picker">
+            {{cznamenan}}
+          </view>
+      </picker>
+    </view>
+    <view style='margin-bottom:0' class='input_parent inline_picker'>
+      <label>老人:</label>
+      <picker name="q20_1_3" bindchange="bindPickerChange1_3" value="{{cznamelao}}" range="{{array20_1}}">
+          <view class="picker">
+            {{cznamelao}}
+          </view>
+      </picker>
+    </view>
+    <view class='input_parent inline_picker'>
+      <label>孩子:</label>
+      <picker name="q20_1_4" bindchange="bindPickerChange1_4" value="{{cznamehai}}" range="{{array20_1}}">
+          <view class="picker">
+            {{cznamehai}}
+          </view>
+      </picker>
+    </view>
+
+    <view class='left_text'>Q2:家人对家居空间布局的期望氛围?</view>
+    <view style='margin-bottom:0' class='input_parent inline_picker'>
+      <label>女主人:</label>
+      <picker name="q20_2_1" bindchange="bindPickerChange2_1" value="{{bjnamenv}}" range="{{array20_2}}">
+          <view class="picker">
+            {{bjnamenv}}
+          </view>
+      </picker>
+    </view>
+    <view style='margin-bottom:0' class='input_parent inline_picker'>
+      <label>男主人:</label>
+      <picker name="q20_2_2" bindchange="bindPickerChange2_2" value="{{bjnamenan}}" range="{{array20_2}}">
+          <view class="picker">
+            {{bjnamenan}}
+          </view>
+      </picker>
+    </view>
+    <view style='margin-bottom:0' class='input_parent inline_picker'>
+      <label>老人:</label>
+      <picker name="q20_2_3" bindchange="bindPickerChange2_3" value="{{bjnamelao}}" range="{{array20_2}}">
+          <view class="picker">
+            {{bjnamelao}}
+          </view>
+      </picker>
+    </view>
+    <view class='input_parent inline_picker'>
+      <label>小孩:</label>
+      <picker name="q20_2_4" bindchange="bindPickerChange2_4" value="{{bjnamehai}}" range="{{array20_2}}">
+          <view class="picker">
+            {{bjnamehai}}
+          </view>
+      </picker>
+    </view>
+
+
+
+
+  <view class='sub_btn' style='margin-top:20rpx;'>
+    <button style="line-height:3;background-color:#bc9970;font-size:30rpx" formType="submit" class='weui-btn' type="primary">提交问卷</button>
+  </view>
+  </form>
+</view>
