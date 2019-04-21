@@ -13,6 +13,8 @@ Page({
     q1_1if: false,
     array20_1: ['木质类', '皮质类', '布艺类', '绿植类', '石材类', '金属类'],
     array20_2: ['热闹', '幽静', '温馨', '浪漫', '明丽', '祥和', '其他'],
+    array20_5: ['咖啡', '茶', '中餐', '西餐', '素餐居多', '荤餐居多', '其他'],
+    array20_6: ['晨跑居多', '健身居多', '瑜伽居多', '球类运动', '其他'],
     index: 0,
     cznamenv:"",
     cznamenan:'',
@@ -22,6 +24,14 @@ Page({
     bjnamenan: '',
     bjnamelao: '',
     bjnamehai: '',
+    ysnamenv: '',
+    ysnamenan: '',
+    ysnamelao: '',
+    ysnamehai: '',
+    hdnamenv: '',
+    hdnamenan: '',
+    hdnamelao: '',
+    hdnamehai: '',
   },
 
   // Q5
@@ -127,6 +137,70 @@ Page({
     var sjs = this.data.array20_2[e.detail.value];
     this.setData({
       bjnamehai: sjs
+    })
+  },
+
+  // Q20_5_1
+  bindPickerChange5_1: function (e) {
+    var sjs = this.data.array20_5[e.detail.value];
+    this.setData({
+      ysnamenv: sjs
+    })
+  },
+
+  // Q20_5_2
+  bindPickerChange5_2: function (e) {
+    var sjs = this.data.array20_5[e.detail.value];
+    this.setData({
+      ysnamenan: sjs
+    })
+  },
+
+  // Q20_5_3
+  bindPickerChange5_3: function (e) {
+    var sjs = this.data.array20_5[e.detail.value];
+    this.setData({
+      ysnamelao: sjs
+    })
+  },
+
+  // Q20_5_4
+  bindPickerChange5_4: function (e) {
+    var sjs = this.data.array20_5[e.detail.value];
+    this.setData({
+      ysnamehai: sjs
+    })
+  },
+
+  // Q20_6_1
+  bindPickerChange6_1: function (e) {
+    var sjs = this.data.array20_6[e.detail.value];
+    this.setData({
+      hdnamenv: sjs
+    })
+  },
+
+  // Q20_5_2
+  bindPickerChange6_2: function (e) {
+    var sjs = this.data.array20_6[e.detail.value];
+    this.setData({
+      hdnamenan: sjs
+    })
+  },
+
+  // Q20_5_3
+  bindPickerChange6_3: function (e) {
+    var sjs = this.data.array20_6[e.detail.value];
+    this.setData({
+      hdnamelao: sjs
+    })
+  },
+
+  // Q20_5_4
+  bindPickerChange6_4: function (e) {
+    var sjs = this.data.array20_6[e.detail.value];
+    this.setData({
+      hdnamehai: sjs
     })
   },
   

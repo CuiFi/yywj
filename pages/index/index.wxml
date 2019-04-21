@@ -2181,39 +2181,39 @@
         </label>
       </radio-group>
     </view>
-    
+
     <view class='left_text_title'>二十、家人期望的空间氛围</view>
     <view class='left_text'>Q1:家人对家居产品材质的喜好?</view>
     <view style='margin-bottom:0' class='input_parent inline_picker'>
       <label>女主人:</label>
       <picker name="q20_1_1" bindchange="bindPickerChange1_1" value="{{cznamenv}}" range="{{array20_1}}">
-          <view class="picker">
-            {{cznamenv}}
-          </view>
+        <view class="picker">
+          {{cznamenv}}
+        </view>
       </picker>
     </view>
     <view style='margin-bottom:0' class='input_parent inline_picker'>
       <label>男主人:</label>
       <picker name="q20_1_2" bindchange="bindPickerChange1_2" value="{{cznamenan}}" range="{{array20_1}}">
-          <view class="picker">
-            {{cznamenan}}
-          </view>
+        <view class="picker">
+          {{cznamenan}}
+        </view>
       </picker>
     </view>
     <view style='margin-bottom:0' class='input_parent inline_picker'>
       <label>老人:</label>
       <picker name="q20_1_3" bindchange="bindPickerChange1_3" value="{{cznamelao}}" range="{{array20_1}}">
-          <view class="picker">
-            {{cznamelao}}
-          </view>
+        <view class="picker">
+          {{cznamelao}}
+        </view>
       </picker>
     </view>
     <view class='input_parent inline_picker'>
       <label>孩子:</label>
       <picker name="q20_1_4" bindchange="bindPickerChange1_4" value="{{cznamehai}}" range="{{array20_1}}">
-          <view class="picker">
-            {{cznamehai}}
-          </view>
+        <view class="picker">
+          {{cznamehai}}
+        </view>
       </picker>
     </view>
 
@@ -2221,41 +2221,211 @@
     <view style='margin-bottom:0' class='input_parent inline_picker'>
       <label>女主人:</label>
       <picker name="q20_2_1" bindchange="bindPickerChange2_1" value="{{bjnamenv}}" range="{{array20_2}}">
-          <view class="picker">
-            {{bjnamenv}}
-          </view>
+        <view class="picker">
+          {{bjnamenv}}
+        </view>
       </picker>
     </view>
     <view style='margin-bottom:0' class='input_parent inline_picker'>
       <label>男主人:</label>
       <picker name="q20_2_2" bindchange="bindPickerChange2_2" value="{{bjnamenan}}" range="{{array20_2}}">
-          <view class="picker">
-            {{bjnamenan}}
-          </view>
+        <view class="picker">
+          {{bjnamenan}}
+        </view>
       </picker>
     </view>
     <view style='margin-bottom:0' class='input_parent inline_picker'>
       <label>老人:</label>
       <picker name="q20_2_3" bindchange="bindPickerChange2_3" value="{{bjnamelao}}" range="{{array20_2}}">
-          <view class="picker">
-            {{bjnamelao}}
-          </view>
+        <view class="picker">
+          {{bjnamelao}}
+        </view>
       </picker>
     </view>
     <view class='input_parent inline_picker'>
       <label>小孩:</label>
       <picker name="q20_2_4" bindchange="bindPickerChange2_4" value="{{bjnamehai}}" range="{{array20_2}}">
-          <view class="picker">
-            {{bjnamehai}}
-          </view>
+        <view class="picker">
+          {{bjnamehai}}
+        </view>
+      </picker>
+    </view>
+
+    <view class='left_text'>Q3:家人的生活日常习惯?</view>
+    <view class='border_view_four_radio first'>
+      <label class='radio_inline_label'>女主人: </label>
+      <radio-group style="display:inline-block;width:80%;" class="radio-group" name="q20_3_1">
+        <label class="inline_radio">
+          <radio value="家里时间多" />家里时间多
+        </label>
+        <label class="inline_radio">
+          <radio value="上班时间多" />上班时间多
+        </label>
+      </radio-group>
+    </view>
+    <view class='border_view_four_radio'>
+      <label class='radio_inline_label'>男主人: </label>
+      <radio-group style="display:inline-block;width:80%;" class="radio-group" name="q20_3_2">
+        <label class="inline_radio">
+          <radio value="家里时间多" />家里时间多
+        </label>
+        <label class="inline_radio">
+          <radio value="上班时间多" />上班时间多
+        </label>
+      </radio-group>
+    </view>
+    <view class='border_view_four_radio'>
+      <label class='radio_inline_label'>老人: </label>
+      <radio-group style="display:inline-block;width:80%;" class="radio-group" name="q20_3_3">
+        <label class="inline_radio">
+          <radio value="家里时间多" />家里时间多
+        </label>
+        <label class="inline_radio">
+          <radio value="外出时间多" />外出时间多
+        </label>
+      </radio-group>
+    </view>
+    <view class='border_view_four_radio last'>
+      <label class='radio_inline_label'>小孩: </label>
+      <radio-group style="display:inline-block;width:80%;" class="radio-group" name="q20_3_4">
+        <label class="inline_radio">
+          <radio value="家里时间多" />家里时间多
+        </label>
+        <label class="inline_radio">
+          <radio value="外出时间多" />外出时间多
+        </label>
+      </radio-group>
+    </view>
+
+    <view class='left_text'>Q4:家人的生活作息习惯?</view>
+    <view class='border_view_fours_radio first'>
+      <label class='radio_inline_label'>女主人: </label>
+      <radio-group style="display:inline-block;width:80%;" class="radio-group" name="q20_4_1">
+        <label class="inline_radio">
+          <radio value="早睡早起" />早睡早起
+        </label>
+        <label class="inline_radio">
+          <radio value="晚睡早起" />晚睡早起
+        </label>
+        <label class="inline_radio">
+          <radio value="晚睡晚起" />晚睡晚起
+        </label>
+      </radio-group>
+    </view>
+    <view class='border_view_fours_radio'>
+      <label class='radio_inline_label'>男主人: </label>
+      <radio-group style="display:inline-block;width:80%;" class="radio-group" name="q20_4_2">
+        <label class="inline_radio">
+          <radio value="早睡早起" />早睡早起
+        </label>
+        <label class="inline_radio">
+          <radio value="晚睡早起" />晚睡早起
+        </label>
+        <label class="inline_radio">
+          <radio value="晚睡晚起" />晚睡晚起
+        </label>
+      </radio-group>
+    </view>
+    <view class='border_view_fours_radio'>
+      <label class='radio_inline_label'>老人: </label>
+      <radio-group style="display:inline-block;width:80%;" class="radio-group" name="q20_4_3">
+        <label class="inline_radio">
+          <radio value="早睡早起" />早睡早起
+        </label>
+        <label class="inline_radio">
+          <radio value="晚睡早起" />晚睡早起
+        </label>
+        <label class="inline_radio">
+          <radio value="晚睡晚起" />晚睡晚起
+        </label>
+      </radio-group>
+    </view>
+    <view class='border_view_fours_radio last'>
+      <label class='radio_inline_label'>小孩: </label>
+      <radio-group style="display:inline-block;width:80%;" class="radio-group" name="q20_4_4">
+        <label class="inline_radio">
+          <radio value="早睡早起" />早睡早起
+        </label>
+        <label class="inline_radio">
+          <radio value="晚睡早起" />晚睡早起
+        </label>
+        <label class="inline_radio">
+          <radio value="晚睡晚起" />晚睡晚起
+        </label>
+      </radio-group>
+    </view>
+
+    <view class='left_text'>Q5:家人的生活饮食习惯?</view>
+    <view style='margin-bottom:0' class='input_parent inline_picker'>
+      <label>女主人:</label>
+      <picker name="q20_5_1" bindchange="bindPickerChange5_1" value="{{ysnamenv}}" range="{{array20_5}}">
+        <view class="picker">
+          {{ysnamenv}}
+        </view>
+      </picker>
+    </view>
+    <view style='margin-bottom:0' class='input_parent inline_picker'>
+      <label>男主人:</label>
+      <picker name="q20_5_2" bindchange="bindPickerChange5_2" value="{{ysnamenan}}" range="{{array20_5}}">
+        <view class="picker">
+          {{ysnamenan}}
+        </view>
+      </picker>
+    </view>
+    <view style='margin-bottom:0' class='input_parent inline_picker'>
+      <label>老人:</label>
+      <picker name="q20_5_3" bindchange="bindPickerChange5_3" value="{{ysnamelao}}" range="{{array20_5}}">
+        <view class="picker">
+          {{ysnamelao}}
+        </view>
+      </picker>
+    </view>
+    <view class='input_parent inline_picker'>
+      <label>小孩:</label>
+      <picker name="q20_5_4" bindchange="bindPickerChange5_4" value="{{ysnamehai}}" range="{{array20_5}}">
+        <view class="picker">
+          {{ysnamehai}}
+        </view>
+      </picker>
+    </view>
+
+    <view class='left_text'>Q6:家人的生活运动习惯?</view>
+    <view style='margin-bottom:0' class='input_parent inline_picker'>
+      <label>女主人:</label>
+      <picker name="q20_6_1" bindchange="bindPickerChange6_1" value="{{hdnamenv}}" range="{{array20_6}}">
+        <view class="picker">
+          {{hdnamenv}}
+        </view>
+      </picker>
+    </view>
+    <view style='margin-bottom:0' class='input_parent inline_picker'>
+      <label>男主人:</label>
+      <picker name="q20_6_2" bindchange="bindPickerChange6_2" value="{{hdnamenan}}" range="{{array20_6}}">
+        <view class="picker">
+          {{hdnamenan}}
+        </view>
+      </picker>
+    </view>
+    <view style='margin-bottom:0' class='input_parent inline_picker'>
+      <label>老人:</label>
+      <picker name="q20_6_3" bindchange="bindPickerChange6_3" value="{{hdnamelao}}" range="{{array20_6}}">
+        <view class="picker">
+          {{hdnamelao}}
+        </view>
+      </picker>
+    </view>
+    <view style='margin-bottom:50px' class='input_parent inline_picker'>
+      <label>小孩:</label>
+      <picker name="q20_6_4" bindchange="bindPickerChange6_4" value="{{hdnamehai}}" range="{{array20_6}}">
+        <view class="picker">
+          {{hdnamehai}}
+        </view>
       </picker>
     </view>
 
 
-
-
-  <view class='sub_btn' style='margin-top:20rpx;'>
-    <button style="line-height:3;background-color:#bc9970;font-size:30rpx" formType="submit" class='weui-btn' type="primary">提交问卷</button>
-  </view>
+    <view class='sub_btn' style='margin-top:20rpx;'>
+      <button style="line-height:3;background-color:#bc9970;font-size:30rpx" formType="submit" class='weui-btn' type="primary">提交问卷</button>
+    </view>
   </form>
 </view>

@@ -36,6 +36,22 @@ Page {
   padding: 15rpx 15rpx;
   border-bottom: 1rpx solid #ebebeb;
 }
+.inline_radio {
+  display: inline-block;
+  font-size: 30rpx;
+  padding: 15rpx 15rpx;
+  /* border-bottom: 1rpx solid #ebebeb; */
+}
+.radio_inline_label{
+  padding-top:15rpx;
+  padding-bottom:15rpx;
+  display:inline-block;
+  font-size:32rpx;
+  width:18%;
+  padding-left: 2%;
+  /* text-align:center; */
+  vertical-align:middle;
+}
 
 .border_view {
   width: 100%;
@@ -44,6 +60,50 @@ Page {
   background-color: #fff;
   border: 1px solid #d5d5d5;
   margin-bottom: 30rpx;
+}
+.border_view_four_radio {
+  width: 100%;
+  background-color: #fff;
+  border: 1px solid #d5d5d5;
+  border-bottom: 0;
+}
+.border_view_four_radio.first {
+  margin-top: 10rpx;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+.border_view_four_radio.last {
+  margin-bottom: 30rpx;
+  border-bottom:1px solid #d5d5d5;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+.border_view_fours_radio.first {
+  margin-top: 10rpx;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+.border_view_fours_radio.last {
+  margin-bottom: 30rpx;
+  border-bottom:1px solid #d5d5d5;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+.border_view_fours_radio {
+  width: 100%;
+  background-color: #fff;
+  border: 1px solid #d5d5d5;
+  border-bottom: 0;
+}
+.border_view_fours_radio .radio_inline_label{
+  width: 16%;
+  font-size: 30rpx;
+}
+.border_view_fours_radio .inline_radio {
+  display: inline-block;
+  font-size: 26rpx;
+  padding: 15rpx 10rpx;
+  /* border-bottom: 1rpx solid #ebebeb; */
 }
 
 .left_text_title {
