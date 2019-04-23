@@ -79,9 +79,7 @@
       </radio-group>
     </view>
 
-    <view class='left_text'>Q8:了解公司的途径?
-      <text style='color:red'>*</text>
-    </view>
+    <view class='left_text'>Q8:了解公司的途径?</view>
     <view class='border_view'>
       <radio-group class="radio-group" name="q8">
         <label class="radio">

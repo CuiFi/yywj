@@ -20,7 +20,7 @@ Page({
     var resultid = shareID ? shareID : myselfID;
     // console.log("resultid:"+ resultid);
     wx.request({
-      url: 'https://request.hejianzhiyang.com/Index/getResult',
+      url: 'https://request.hejianzhiyang.com/Index/getResult_yy',
       method:'POST',
       data:{
         confusion: resultid

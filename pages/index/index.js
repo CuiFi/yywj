@@ -269,7 +269,7 @@ Page({
     // var objform = Object.assign(formData, { "cityID": cityTabs });
     if (formData.q1) {
       wx.request({
-        url: 'https://request.hejianzhiyang.com/Index/two',
+        url: 'https://request.hejianzhiyang.com/Index/yy_dyd',
         method: "POST",
         data: formData,
         header: {
@@ -285,7 +285,7 @@ Page({
     } else {
       wx.showModal({
         title: '警告',
-        content: '请填写姓名,对接人',
+        content: '请填写姓名',
         showCancel: false,
         success(res) {
           if (res.confirm) {

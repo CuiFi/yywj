@@ -5,7 +5,7 @@
         </view>
         <view class="weui-msg__text-area">
             <view class="weui-msg__title">提交成功</view>
-            <view class="weui-msg__desc">如需修改，可点击重新填写并再次提交，感谢您选择合建</view>
+            <view class="weui-msg__desc">如需修改，可点击重新填写并再次提交</view>
         </view>
         <view class="weui-msg__opr-area">
             <view class="weui-btn-area">

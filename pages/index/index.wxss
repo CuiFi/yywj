@@ -38,8 +38,8 @@ Page {
 }
 .inline_radio {
   display: inline-block;
-  font-size: 30rpx;
-  padding: 15rpx 15rpx;
+  font-size: 26rpx;
+  padding: 14rpx 10rpx;
   /* border-bottom: 1rpx solid #ebebeb; */
 }
 .radio_inline_label{
