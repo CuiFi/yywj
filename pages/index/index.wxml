@@ -97,6 +97,13 @@
       </radio-group>
     </view>
 
+    <view class='left_text'>Q9:对接易阳服务人员姓名:
+      <text style='color:red'>*</text>
+    </view>
+    <view class='input_parent'>
+      <input class='input_text' type='text' name="q9"></input>
+    </view>
+
     <view class='left_text_title'>一、整体需求</view>
 
     <view class='left_text'>Q1:喜欢的风格?
